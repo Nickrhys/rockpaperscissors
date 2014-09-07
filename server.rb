@@ -16,7 +16,7 @@ class RockPaperScissors < Sinatra::Base
   	erb :play	
   end
 
-  post "/play" do
+  post '/play' do
   	player = Player.new(params[:name])
   	player.picks = params[:pick]
   	computer = generate_computer
@@ -30,8 +30,11 @@ class RockPaperScissors < Sinatra::Base
   	comp = Player.new("computer")
   	comp.picks = choice
   	comp
-  end
+  end 
 
+  get '/play' do
+    erb :play 
+  end
 
 
   # start the server if ruby file executed directly

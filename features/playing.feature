@@ -14,3 +14,8 @@ Scenario: A player is playing
 	Given I've registered to play
 	When I choose Paper
 	Then I should see "RESULTS"
+
+Scenario: Starting a new game
+	Given I have finished a game
+	When I click "Play Again?"
+	Then I should go back to ready to play

@@ -1,10 +1,17 @@
-RESULTS:
+HOW DID YOU GET ON? 
 <% if @game.winner == "Draw" %>
- <h1> it was a draw </h1>
+ <h1> It was a draw </h1>
  <% elsif @game.winner.name == "computer" %>
- <h1> You lost, the compute won with <%= @game.winner.pick %></h1>
+ <h1> Aw man! You suck! You got beat by <%= @game.winner.pick %>!</h1>
 <% else %>
-<h1> You won, with <%= @game.winner.pick %> </h1>
+<h1> Hooray! <%= @game.winner.pick %> beat <%= @game.loser.pick %>!</h1>
 <%end%>
+
+<form action="/play" method="GET">
+<button>Play Again?</button>
+</form>
+
+<form action="/" method="GET">
+<button>Or start again</button>
 
 

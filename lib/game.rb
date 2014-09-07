@@ -7,6 +7,7 @@ class Game
 	end
 
 	BEATS = {rock: :scissors, scissors: :paper, paper: :rock}
+	LOSES = {scissors: :rock, paper: :scissors, rock: :paper}
 
 	attr_reader :players, :player1, :player2
 
@@ -16,6 +17,11 @@ class Game
 		player2
 	end
 
+	def loser
+		return player1  if LOSES[normalize(player1.pick)] == normalize(player2.pick)
+		player2
+	end
+		
 	def normalize(pick)
 		pick.downcase.to_sym
 	end

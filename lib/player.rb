@@ -4,7 +4,7 @@ class Player
 	end
 
 	attr_reader :name
-	attr_writer :picks
+	attr_writer :picks 
 
 	def pick
 		@picks
