@@ -16,7 +16,7 @@ class Game
 		return player1  if BEATS[normalize(player1.pick)] == normalize(player2.pick)
 		player2
 	end
-
+#Need to add test for loser status. 
 	def loser
 		return player1  if LOSES[normalize(player1.pick)] == normalize(player2.pick)
 		player2
