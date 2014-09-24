@@ -4,7 +4,8 @@ body {font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, s
 h1   {text-align: center;}
 section {width: 35%; margin: 20% auto;} 
 button {
-		margin-left: 40%;
+		margin-left: 47.5%;
+		margin-top: 2%;
 		display: block; 
 		background-color: #C0C0C0; 
 		border: 0; 
