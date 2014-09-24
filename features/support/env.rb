@@ -8,14 +8,14 @@ require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
 
-Capybara.app = RockPaperScissors
+Capybara.app = StonePaperScissors.new
 
-class RockPaperScissorsWorld
+class StonePaperScissorsWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
 end
 
 World do
-  RockPaperScissorsWorld.new
+  StonePaperScissorsWorld.new
 end

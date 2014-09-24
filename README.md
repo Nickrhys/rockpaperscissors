@@ -1,4 +1,4 @@
-rockpaperscissors
+stonepaperscissors
 =================
 Week five challenge at Makers Academy.
 

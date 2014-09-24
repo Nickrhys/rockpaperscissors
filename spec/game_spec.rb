@@ -11,8 +11,8 @@ describe Game do
 
 	context 'when playing' do
 
-		it 'player one picks rock, player two picks scissors' do
-			allow(player1).to receive(:pick).and_return("Rock")
+		it 'player one picks stone, player two picks scissors' do
+			allow(player1).to receive(:pick).and_return("stone")
 			allow(player2).to receive(:pick).and_return("Scissors")
 			expect(game.winner).to eq player1
 		end
@@ -23,9 +23,9 @@ describe Game do
 			expect(game.winner).to eq player2
 		end
 
-		it "player one picks paper, player two picks rock" do
+		it "player one picks paper, player two picks stone" do
 			allow(player1).to receive(:pick).and_return("Paper")
-			allow(player2).to receive(:pick).and_return("Rock")
+			allow(player2).to receive(:pick).and_return("stone")
 			expect(game.winner).to eq player1
 		end
 

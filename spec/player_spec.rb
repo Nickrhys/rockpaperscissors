@@ -7,8 +7,8 @@ describe Player do
 	end
 
 	it "can make a pick" do 
-		player.picks = "Rock"
-		expect(player.pick).to eq("Rock")
+		player.picks = "stone"
+		expect(player.pick).to eq("stone")
 	end
 
 

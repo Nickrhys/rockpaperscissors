@@ -2,7 +2,7 @@ require 'sinatra/base'
 require './lib/player'
 require './lib/game'
 
-class RockPaperScissors < Sinatra::Base
+class StonePaperScissors < Sinatra::Base
 
 configure :production do
   require 'newrelic_rpm'
@@ -30,7 +30,7 @@ end
   end
 
   def generate_computer
-  	choice = ["Rock","Paper","Scissors"].sample
+  	choice = ["stone","Paper","Scissors"].sample
 
   	comp = Player.new("computer")
   	comp.picks = choice
