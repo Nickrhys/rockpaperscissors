@@ -7,3 +7,5 @@ Week five challenge at Makers Academy.
 2. Deployed application to Heroku.
 
 3. Added NewRelic add-on to the production environment on Heroku
+
+![](https://github.com/Nickrhys/rockpaperscissors/blob/master/public/images/new_relic_snapshot.png)
